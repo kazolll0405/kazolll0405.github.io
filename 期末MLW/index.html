@@ -9,7 +9,7 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     
-<ul class="nav nav-tabs top-0 start-0" id="myTab" role="tablist">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">首頁</button>
   </li>
@@ -23,10 +23,10 @@
     <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">主持人簡介</button>
   </li>
 </ul>
-<div class="tab-content" id="myTabContent" style="background-color:#FFA500 height:700px">
-  <div class="tab-content position-absolute translate-middle"></div>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-content"></div>
   <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-   <div id="carouselExampleFade" class="carousel slide carousel-fade"  style="width:1000px;height:600px;top:40px;left:683">
+   <div id="carouselExampleFade" class="carousel slide carousel-fade"  style="width:1000px;height:600px;top:40px;float:center">
     <div class="carousel-inner">
      <div class="carousel-item active">
         <img src="定義團圖.jpg" class="d-block w-100" alt="定義相談室">
@@ -62,5 +62,7 @@
   <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
   <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
 </div>
+
+<canvas id="myCanvas1" width="1100" height="700" style="border:0px solid #FFA500;"></canvas>
   </body>
 </html>
