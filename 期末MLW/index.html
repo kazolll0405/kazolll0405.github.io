@@ -1,85 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML9</title>
+  <style>
+    h1{
+      display: block;               /*設定為區塊性*/
+      font-size: 2em;               /*字體大小*/
+      margin-bottom: 5px;        /*距離下面元素距離*/
+      font-weight: bold;            /*字體粗度*/
+    }
+    header{
+      background-color: #ffffff;    /*背景顏色*/
+      margin-bottom: 5px;
+    }
+    nav ul{                         /*nav底下的ul*/
+      background-color: rgba(255, 182, 74, 0.927);
+      height: 30px; 
+      padding-top: 8px;
+    }
+    nav li{                         /*nav底下的li*/
+      margin-right: 80px;           /*距離右邊多少距離*/
+      display: inline;              /*設定為在同一水平線*/
+    }
+  
+    footer{
+      background-color: #ffd452;
+      clear: both;                  
+      padding-top: 10px;            /*文字距離上方邊寬的距離*/
+      padding-bottom: 10px;         /*文字距離下方邊寬的距離*/
+      text-align: center;           /*字體對齊*/
+    }
+    article{
+      background-color: #ffde70;
+      padding-top: 1px;
+      margin-bottom: 5px;
+      float: left;
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>定義相談室</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
-  </head>
-  <body>
+<body>
+  <header> 
+    <h1>Header</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Nav</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <div class="header-content wrapper-content">
-            <h1 class="logo"><img src="定義團圖.jpg" class="d-block w-100" alt="定義相談室"></h1>
-            <nav class="header-nav">
-                <a href="" class="link__text">首頁</a>
-                <a href="" class="link__text">作品</a>
-                <a href="" class="link__text">精華短片</a>
-                <a href="" class="link__text">主持人簡介</a>
-            </nav>
-        </div>
-    </header>
-    
-    .wrapper-content {
-  box-sizing: border-box;
-  width: 1024px;
-}
+  
+  
+    <article>
+      <h2>article 1</h2>
+      <p>HyperText Markup Language, commonly referred to as HTML, is the standard markup language used to create web pages. Along with CSS, and JavaScript</p>
+    </article>
 
-.header-content {
-  background-color: #fff5da;
-  height: 70px;
-  padding-left: 30px;
-  padding-right: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-nav {
-  width: 330px;
-  display: flex;
-  justify-content: space-between;
-}
-        
-<div class="tab-content" id="myTabContent">
-  <div class="card text-bg-primary mb-3" style="max-width: 70rem;">
-  <div class="tab-content"></div>
-  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-   <div id="carouselExampleFade" class="carousel slide carousel-fade"  style="float:center;width:1000px;height:600px;top:40px;">
-    <div class="carousel-inner">
-     <div class="carousel-item">
-        <img src="podcast 示意圖.jpg" class="d-block w-100" alt="團隊簡介">
-          <div class="carousel-caption d-none d-md-block">
-           <h5>團隊簡介</h5>
-           <p>這裡是三位Z世代的人類共同組成的談話性節目<br>
-              目標是讓所有人得到真實且自由的資訊<br>
-              （包含主持們的個人主義
-           </p>
-          </div>
-     </div>
-     <div class="carousel-item">
-      <img src="早安草莓.jpeg" class="d-block w-100" alt="吉祥物">
-         <div class="carousel-caption d-none d-md-block">
-           <h5>吉祥物</h5>
-          </div>
-     </div>
-     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-  </div>
-</div>
-  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
-</div>
-
-  </body>
+    <footer>
+      <p>Copyright &copy; 2015 <a href="http://www.stu.edu.tw/">Shu-Te University Computer Science &amp; Information Engineering</a>. All rights reserved.</p>
+    </footer>
+</body>
 </html>
